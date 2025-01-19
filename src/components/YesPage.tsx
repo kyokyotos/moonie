@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled, { createGlobalStyle, keyframes } from 'styled-components';
-
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -10,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('/imgs/wall.jpg'); /* Update the path */
+    background-image: url('/moonie/imgs/wall.jpg'); /* Update the path */
     background-size: cover; /* Makes the image cover the entire screen */
     background-repeat: no-repeat; /* Ensures the image doesn't repeat */
     background-position: center; /* Centers the image */
@@ -70,13 +69,12 @@ const Heart = styled.div`
 `;
 
 const YesPage: React.FC = () => {
-  
   return (
     <>
       <GlobalStyle />
       <Container>
         <Title>Yipeeee</Title>
-        
+
         <GifContainer>
           <img 
             src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazVtb3F3eDA2dnhuM2x0OHNsc2NkM216am9rM2k2c3JtbXc5MWduMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oCR2Nkr3LCUoM/giphy.gif"
@@ -88,8 +86,6 @@ const YesPage: React.FC = () => {
         <Message>
           Thats me in the corner right now loook!!!
         </Message>
-
-        {/* Floating hearts background */}
 
         {Array.from({ length: 20 }).map((_, i) => (
           <Heart
@@ -103,7 +99,6 @@ const YesPage: React.FC = () => {
             💙
           </Heart>
         ))}
-
       </Container>
     </>
   );

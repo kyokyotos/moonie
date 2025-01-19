@@ -4,12 +4,11 @@ import YesPage from './components/YesPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/moonie"> {/* This ensures the base path is handled */}
       <Routes>
         <Route path="/" element={<ValentinePage />} />
         <Route path="/yes" element={<YesPage />} />
-        {/* Redirect root to /muskan */}
-        <Route path="/" element={<ValentinePage />} />
+        {/* Any other routes you need */}
       </Routes>
     </BrowserRouter>
   );
