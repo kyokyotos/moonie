@@ -127,7 +127,7 @@ Please change the parent <Route path="${j}"> to <Route path="${j==="/"?"*":`${j}
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('/imgs/wall.jpg'); /* Update the path */
+    background-image: url('/moonie/imgs/wall.jpg'); /* Update the path */
     background-size: cover; /* Makes the image cover the entire screen */
     background-repeat: no-repeat; /* Ensures the image doesn't repeat */
     background-position: center; /* Centers the image */
